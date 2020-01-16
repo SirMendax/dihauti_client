@@ -1,0 +1,41 @@
+.pagination{
+  display: flex;
+}
+.pagination__list{
+  display: flex;
+  li{
+    display: flex;
+    .pagination__link{
+      padding: 10px 20px;
+      background: $violet;
+      color: $white;
+      cursor: pointer;
+      &:hover{
+        color: $white;
+        background: $pink;
+      }
+    }
+    .is-current{
+      color: $white;
+      background: $pink;
+    }
+  }
+}
+.pagination__previous{
+  padding: 10px 20px;
+  background: $violet;
+  color: $white;
+  &:hover{
+    color: $white;
+    background: $pink;
+  }
+}
+.pagination__next{
+  padding: 10px 20px;
+  background: $violet;
+  color: $white;
+  &:hover{
+    color: $white;
+    background: $pink;
+  }
+}

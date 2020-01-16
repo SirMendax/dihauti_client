@@ -1,0 +1,174 @@
+@import "utils/vars";
+@import "utils/fonts";
+@import "utils/reset";
+@import "utils/grid";
+@import "../fontawesome/css/all.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-family: $mainFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: .4s;
+  cursor: pointer;
+  &:hover{
+    transition: .4s;
+  }
+}
+
+li,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.btn-pink {
+  font-weight: 400;
+  padding: 10px 20px;
+  transition: .3s;
+  cursor: pointer;
+  background: $white;
+  color: $violet;
+  opacity: 1;
+  a{
+    color: $white;
+    transition: .3s;
+  }
+  &:hover{
+    opacity: .7;
+    transition: .3s;
+  }
+}
+.btn {
+  font-weight: 400;
+  padding: 10px 20px;
+  transition: .3s;
+  cursor: pointer;
+  background: $violet;
+  color: $white;
+  a{
+    color: $white;
+    transition: .3s;
+  }
+  &:hover{;
+    transition: .3s;
+    a{
+      transition: .3s;
+    }
+  }
+}
+
+.upButton{
+  position: fixed;
+  bottom:5px;
+  right:0;
+  padding: 10px 10px;
+  font-size: 30px;
+  opacity: 0;
+  transition: .5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+  cursor: pointer;
+  transform: translate3d(0, -80px, 0);
+  background: $pink;
+  color: $violet;
+  &:hover{
+    background: $violet;
+    color: $pink;
+    transition: .5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+}
+.meta-data {
+  color: #5e6973;
+  i {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+}
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+.like, a{
+  cursor: pointer;
+  transition: .4s;
+  opacity: 1;
+  &:hover{
+    transition: .4s;
+    opacity: .7;
+  }
+}
+.pagination{
+  display: flex;
+  font-size: 20px;
+  .page-item{
+    padding: 5px;
+    color: $violet;
+    a{
+      color: $violet;
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+  .active{
+    color:$white;
+    a{
+      color: $white;
+    }
+    background: $violet;
+  }
+}
+.dialog-window{
+  overflow-y: scroll;
+  height: 60.6vh;
+  -ms-overflow-style : none;  /* IE 10+ */
+  scrollbar-width    : none /* Firefox */
+}
+.dialog-window::-webkit-scrollbar {
+  width      : 0;  /* ширина scrollbar'a */
+  background : transparent  /* опционально */
+}
+// Modules
+@import "modules/header";
+@import "modules/footer";
+@import "modules/form";
+@import "modules/pagination";

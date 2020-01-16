@@ -1,0 +1,57 @@
+// Size
+$desktopWidth: 1280px;
+$smDesktopWidth: 980px;
+$tableWidth: 768px;
+$phoneWidth: 480px;
+$smPhoneWidth: 320px;
+
+// Main color
+
+$violet: rgba(45, 8, 44, 1);
+$violet-opacity: rgba(45, 8, 4, 0.3);
+$pink: rgba(223, 166, 207, 1);
+
+$white: rgba(248, 248, 248, 1);
+
+
+//background
+
+.bg-violet{
+  background: $violet;
+}
+
+.bg-white{
+  background: $white;
+}
+
+.bg-pink{
+  background: $pink;
+}
+.bg-opacity{
+  background: $violet-opacity
+}
+//color
+
+.violet{
+  color: $violet;
+  a{
+    color: $violet;
+  }
+}
+
+.white{
+    color:$white;
+    a{
+      color:$white;
+    }
+}
+
+.pink{
+  color: $pink;
+  a{
+    color: $pink;
+  }
+}
+.box-shadow {
+  box-shadow: 0 2px 3px 0 rgba(6,6,6,.85);
+}

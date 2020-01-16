@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /js/
+Disallow: /icons/
+Disallow: /css/
+
+Host: https://dihauti.ru
+Sitemap: https://dihauti.ru/sitemap.xml

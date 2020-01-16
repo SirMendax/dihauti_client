@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+// Font
+$mainFont:'Roboto', sans-serif;
+
+.size-title{
+  font-size: calc(2*18px);
+  font-weight: 600;
+  @media all and (max-width: $smDesktopWidth){
+    font-size: calc(2*17px);
+  }
+  @media all and (max-width: $tableWidth){
+    font-size: calc(2*16px);
+  }
+  @media all and (max-width: $phoneWidth){
+    font-size: calc(1.8*15px);
+  }
+  @media all and (max-width: $smPhoneWidth){
+    font-size: calc(1.8*14px);
+  }
+}
+.size-lead{
+  font-size: calc(1.5*18px);
+  font-weight: 300;
+  @media all and (max-width: $smDesktopWidth){
+    font-size: calc(1.5*17px);
+  }
+  @media all and (max-width: $tableWidth){
+    font-size: calc(1.4*16px);
+  }
+  @media all and (max-width: $phoneWidth){
+    font-size: calc(1.4*15px);
+  }
+  @media all and (max-width: $smPhoneWidth){
+    font-size: calc(1.4*14px);
+  }
+}
+.size-text{
+  font-size: 18px;
+  font-weight: 300;
+  @media all and (max-width: $smDesktopWidth){
+    font-size: 17px;
+  }
+  @media all and (max-width: $tableWidth){
+    font-size: 16px;
+  }
+  @media all and (max-width: $phoneWidth){
+    font-size: 15px;
+  }
+  @media all and (max-width: $smPhoneWidth){
+    font-size: 14px;
+  }
+}
+.nowrap{
+  white-space: nowrap;
+}
+.center{
+  text-align: center;
+}
